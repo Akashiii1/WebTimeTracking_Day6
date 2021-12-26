@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+:root{
+  --Blue: hsl(246, 80%, 60%);
+
+ --Lightred: hsl(15, 100%, 70%);/*(work)*/
+ --Softblue : hsl(195, 74%, 62%);/*(play)*/
+ --Lightred : hsl(348, 100%, 68%);/*(study)*/
+ --Limegreen : hsl(145, 58%, 55%);/*(exercise)*/
+ --Violet: hsl(264, 64%, 52%);/*(social)*/
+ --Softorange : hsl(43, 84%, 65%);/*(self care)*/
+
+  --Verydarkblue: hsl(226, 43%, 10%);
+  --Darkblue: hsl(235, 46%, 20%);
+  --Desaturatedblue: hsl(235, 45%, 61%);
+  --PaleBlue: hsl(236, 100%, 87%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+body{
+  font-family: 'Rubik', sans-serif;
+  background: var(--Darkblue);
+}
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
